@@ -17,6 +17,10 @@ import (
 
 var debug = false
 
+func SetDebug(isDebug bool) {
+	debug = isDebug
+}
+
 func unexpected(request string) error {
 	return fmt.Errorf("Unexpected response received to '%s' request", request)
 }
